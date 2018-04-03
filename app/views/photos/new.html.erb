@@ -1,0 +1,4 @@
+<%= form_with(scope: :photo, url: photos_path, method: :post) do |f| %>
+  <%= f.file_field :file, accept: "image/gif, image/jpg, image/jpeg, image/png", direct_upload: true %>
+  <%= f.submit "Save" %>
+<% end %>
